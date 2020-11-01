@@ -12,7 +12,7 @@ If we have only a small number of samples from these two distributions then we n
 
 We thus have to find a way to calculate the common variance that will be used in the hypothesis test.  The most obvious way to do this is to sum over the data points from the two groups when calculating the first and second sums in the formulas above.  This is not a particularly sensible option, however.  Consider the figure above.  The green dot shows the common mean for the two distributions, which sits at the midpoints between the two distributions.  If you recall that the variance is the average of the square of the distance from the mean you would thus get a very large value for the variance if you calculated the variance in this way as all the points in the two distributions are quite far from the green dot.  In summary, the problem in calculating the total variance using all the data points in the distribution is that the "total" variance that emerges depends on the difference in the means for the two distributions.  We thus calculate the common variance using:
 
-![](https://render.githubusercontent.com/render/math?math=s^2=\frac{n_1-1)s_1^2%2B(n_2-1)s_2^2}{n_1%2Bn_2-2})
+![](https://render.githubusercontent.com/render/math?math=s^2=\frac{(n_1-1)s_1^{2}%2B(n_2-1)s_2^2}{n_1%2Bn_2-2})
 
 where ![](https://render.githubusercontent.com/render/math?math=s_1) and ![](https://render.githubusercontent.com/render/math?math=s_2) are the estimates of the standard deviations for the first and second sets of points that are calculated using the formula at the top of this page respectively.
 
